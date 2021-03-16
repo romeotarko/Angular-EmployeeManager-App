@@ -1,16 +1,16 @@
 # EmployeeManagerApp
 
-##Employee manager simple application
+## Employee manager simple application
 
-##Here are some Endpoints
+## Here are some Endpoints
 
-##Employee
+## Employee
 
--search
+- search
 
--add
+- add
 
--delete
+- delete
 
--update
+- update
 
