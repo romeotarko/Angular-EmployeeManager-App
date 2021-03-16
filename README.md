@@ -2,7 +2,15 @@
 
 ##Employee manager simple application
 
--seach employee
--add employee
--delete employee
--update employee
+##Here are some Endpoints
+
+##Employee
+
+-search
+
+-add
+
+-delete
+
+-update
+
