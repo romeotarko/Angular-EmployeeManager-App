@@ -7,3 +7,10 @@ export interface Employee{
     imageUrl: string;
     employeeCode: string;
 }
+
+export interface EmployeeUpdateRequest{
+    email: string;
+    jobTitle: string;
+    phone: string;
+    imageUrl: string;
+}

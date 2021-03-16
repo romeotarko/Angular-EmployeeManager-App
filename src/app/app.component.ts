@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Employee } from './employee';
+import { Employee, EmployeeUpdateRequest } from './employee';
 import { EmployeeService } from './employee.service';
 import { HttpErrorResponse } from '@angular/common/http';
 import { NgForm } from '@angular/forms';
@@ -15,6 +15,7 @@ export class AppComponent implements OnInit {
   }
   public employees: Employee[];
   public editEmployee: Employee;
+  public employeeUpdateRequest: EmployeeUpdateRequest;
   public deleteEmployee: Employee;
 
   constructor(private employeeService: EmployeeService){}
@@ -50,8 +51,8 @@ export class AppComponent implements OnInit {
     );
   }
 
-  public onUpdateEmloyee(employee: Employee): void {
-    this.employeeService.updateEmployee(employee).subscribe(
+  public onUpdateEmloyee(id:number,employeeUpdateRequest: EmployeeUpdateRequest): void {
+    this.employeeService.updateEmployee(id,employeeUpdateRequest).subscribe(
       (response: Employee) => {
         console.log(response);
         this.getEmployees();
